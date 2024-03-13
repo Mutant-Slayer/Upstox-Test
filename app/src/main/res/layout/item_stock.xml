@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="IRFC" />
+
+    <TextView
+        android:id="@+id/tvLTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCompanyName"
+        tools:text="LTP: $200.50" />
+
+    <TextView
+        android:id="@+id/tvNoOfStocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/tvCompanyName"
+        app:layout_constraintTop_toBottomOf="@id/tvCompanyName"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tvPL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@id/tvLTP"
+        app:layout_constraintTop_toBottomOf="@id/tvLTP"
+        tools:text="P/L: $ -456.80" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
